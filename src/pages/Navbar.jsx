@@ -8,8 +8,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent poppins">
-      <Link to="/" className="title canopee tracking-wider  ">
-        <span className="bg-[#3D2A73] rounded text-5xl px-3">Tech Tatva</span>
+      <Link to="/" className="title canopee tracking-wider">
+        <span className="bg-[#3D2A73] rounded-lg md:text-5xl px-3 text-2xl sm:text-4xl">Tech Tatva</span>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

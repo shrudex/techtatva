@@ -10,6 +10,33 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Canopee";
+  src: url("fonts/canopee.ttf");
+}
+
+@font-face {
+  font-family: "Domaine";
+  src: url("fonts/domaine.ttf");
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("fonts/editorial.ttf");
+}
+
+.canopee {
+  font-family: "Canopee";
+}
+
+.domaine {
+  font-family: "Domaine";
+}
+
+.editorial {
+  font-family: "Editorial";
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -18,37 +45,10 @@
   font-family: "Pixelify Sans", sans-serif;
 }
 
-.inter{
-  font-family: 'Inter', sans-serif;
+.inter {
+  font-family: "Inter", sans-serif;
 }
 
-.raleway{
-  font-family: 'Raleway', sans-serif;
-}
-
-@font-face {
-  font-family: 'Canopee';
-  src: url('fonts/canopee.ttf');
-}
-
-@font-face {
-  font-family: 'Domaine';
-  src: url('fonts/domaine.ttf');
-}
-
-@font-face {
-  font-family: 'Editorial';
-  src: url('fonts/editorial.ttf');
-}
-
-.canopee{
-  font-family: 'Canopee';
-}
-
-.domaine{
-  font-family: 'Domaine';
-}
-
-.editorial{
-  font-family: 'Editorial';
+.raleway {
+  font-family: "Raleway", sans-serif;
 }
