@@ -2,6 +2,7 @@ import CarouselComp from "./components/CarouselComp";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import ConclaveCards from "./components/ConclaveCards";
+import Sponsors from "./components/Sponsors";
 
 const Home = () => {
   const speakers = [
@@ -154,6 +155,15 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="sponsors w-full h-screen flex justify-center flex-col gap-7">
+        <h1 className="py-2 px-12 domaine text-4xl sm:text-5xl md:text-7xl text-left mt-6">
+          Sponsors
+        </h1>
+        <div className="sponsors-display mx-auto max-w-3/4 h-auto w-3/4 rounded-md mb-20 border-2 border-[#c2acf1] p-3 ">
+          <Sponsors/>
+        </div>
+      </div>
+      
     </div>
   );
 };
