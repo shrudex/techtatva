@@ -32,7 +32,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="home w-full h-full">
+    <div className="home w-full h-full ">
       <h1 className="mb-2 text-4xl font-extrabold leading-none tracking-tight text-white text-center poppins md:text-5xl lg:text-6xl">
         Tech Tatva{" "}
         <span className="underline underline-offset-3 text-[#915EFF] decoration-8 decoration-white ">

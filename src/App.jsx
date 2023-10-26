@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 const App = () => {
   return (
-    <div className="app h-full w-full  bg-bg-image bg-repeat text-white">
+    <div className="app h-full w-full  bg-bg-image bg-repeat text-white ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
