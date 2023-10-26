@@ -1,5 +1,4 @@
 import CarouselComp from "./components/CarouselComp";
-import React from "react";
 import Typewriter from "typewriter-effect";
 import ConclaveCards from "./components/ConclaveCards";
 import Sponsors from "./components/Sponsors";
