@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import EventsCard from "./components/EventsCard";
 import Pagination from "./components/Pagination";
 
-const Events = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+const Events2 = () => {
+  const [currentPage, setCurrentPage] = useState(2);
   const onPageChange = (page) => setCurrentPage(page);
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (event) => {
@@ -17,51 +17,51 @@ const Events = () => {
 
   const events = [
     {
-      event: "PIXELVISION",
-      org: "MIT-GPT-WORKSHOP",
-      desc: "AB3 18 Oct 2023 Embark on a captivating voyage into the realm of computer vision with PixelVision, an OpenCV Workshop. Learn the technique of image processing through a series of hand-on activities and captivating demonstrations in an insightful session.",
+      event: "TESSERACT",
+      org: "ACUMEN",
+      desc: "Entire campus (centre at GSH) 19 Oct 2023 Have you watched Student of the Year? Does the thought of solving riddles and hunting for a treasure excite you? Tesseract is the perfect event for you as it embodies the spirit of competition and the pursuit of something valuable. It is a captivating event where participants embark on a thrilling adventure to uncover hidden treasures.",
       mode: "OFFLINE",
     },
     {
-      event: "GITCRAFT",
-      org: "FOSSIFY-WORKSHOP",
-      desc: "AB3 104 16 Oct 2023 Building Together in Open Source: Want to learn Git, Github , and build your first open-source webpage? This workshop is for you!",
+      event: "AIB",
+      org: "ACUMEN",
+      desc: "AB3- 402,403 20 Oct 2023 Are you drawn to the allure of an Auction, or do you crave the exhilarating pulse of Jeopardy-style trivia? Look no more, for we have the ultimate fusion tailored just for you. AIB presents an electrifying medley of buzzer rounds, Jeopardy trivia, and auction, seamlessly intertwined across three gripping rounds.",
       mode: "OFFLINE",
     },
     {
-      event: "ORK WORKSHOP & VIRTUAL ROCKET BUILDING COMPETION",
-      org: "ESCAPE VELOCITY-WORKSHOP",
-      desc: "Ab3-103 15 Oct 2023 The focus of the event is centered on utilizing the open-source software named open rocket, enabling participants to construct their model rockets from the ground up and subsequently simulate their behavior.",
+      event: "SUSTAIN-A-BUILD",
+      org: "ARCUS",
+      desc: "AB3-304,305 20 Oct 2023 This offline event is based on testing an individual’s potential in management of real estate and budget analysis.",
       mode: "OFFLINE",
     },
     {
-      event: "MICROSOFT FLIGHT SIMULATOR",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-403 16 Oct 2023 Experience the beauty of aviation firsthand with our flight simulator and take to the skies. Calling all aviation enthusiasts.",
+      event: "FOXHUNT",
+      org: "ALACRITY",
+      desc: "AB5-207 19 Oct 2023 In this thrilling competition, participants will have to construct their own receiver antennas and using these, embark on a quest to locate multiple hidden transmitting antennas placed throughout the campus. The event will take place over two days.",
       mode: "OFFLINE",
     },
     {
-      event: "FLIGHT MECHANICS WORKSHOP",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-102 17 Oct 2023 Have you ever wondered how planes actually fly? This workshop offers you the opportunity to dive deep into the wonderful world of air-flight machines. Covering the basics of flight mechanics and aerodynamics, this informative seminar allows you to visualize flight characteristics and essentially understand the science behind flight.",
+      event: "CIPHER",
+      org: "MIT-GPT",
+      desc: "AB3 18 Oct 2023 Cipher is an intensive 24-hour Data Science Hackathon where participants will have to showcase their analytics and Machine Learning expertise. The individual will be given an opportunity to demonstrate their proficiency in data handling and exhibit their analytical skills in an intense and competitive environment.",
+      mode: "ONLINE",
+    },
+    {
+      event: "CHAKRAVYUH 4.0",
+      org: "MECHATRON",
+      desc: "AB3 204,205 18 Oct 2023 Join us on a thrilling two-day journey inspired by the ancient Chakravyuh tactic from the Mahabharata. Dive into a world of intellectual conquests, where your abilities will be challenged through diverse, fun, and strategically demanding challenges. These challenges are designed to engage and test your cognitive prowess.",
       mode: "OFFLINE",
     },
     {
-      event: "NOVA - UI/UX WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Whether you're a designer or a developer, this workshop will enhance your understanding of user needs and help you master the art of designing intuitive, user-friendly interfaces.",
+      event: "QUANDARY",
+      org: "BIZZCOM",
+      desc: "AB3 203 19 Oct 2023 Quandary is bespoken for those who think promptly and bring out-of-the-box directives for challenging problems. The participants will be bombarded with problem statements based on the nature of their committee and they are expected to defend, debate, and think of solutions for the same.",
       mode: "OFFLINE",
     },
     {
-      event: "(M.A.D) MOBILE APP DEVELOPMENT WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Unlock the world of app development in our immersive workshop, designed for students eager to create, innovate and code. Join us to delve into the art of turning ideas into functional mobile applications. Guided by seasoned developers, you'll learn hands-on coding, UI design, and app deployment.",
-      mode: "OFFLINE",
-    },
-    {
-      event: "EVERYTHING OFF-ROAD",
-      org: "KRAFTWAGEN (WORKSHOP)",
-      desc: "Behind MIT Football ground 15 Oct 2023 An interesting workshop demonstrating various domains involved in the manufacturing of automobiles and industry level skill sets. By using preliminary design(CAD) , analysis (CAE), manufacturing process and finally testing of components.",
+      event: "KICK-OFF",
+      org: "MECHATRON",
+      desc: "FC1 18 Oct 2023 Immerse yourself in the future of football with our thrilling Miniature Bot Football Matches! Command your pint-sized football bot using the convenience of your phone and Bluetooth technology. Experience the excitement as you skillfully manoeuvre your bot to score spectacular goals while fiercely defending your goal post from the opponents.",
       mode: "OFFLINE",
     },
   ];
@@ -130,11 +130,11 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <div className="page-1 flex justify-center items-center p-8 ">
+      <div className="page-2 flex justify-center items-center p-8 ">
         <Pagination />
       </div>
     </div>
   );
 };
 
-export default Events;
+export default Events2;

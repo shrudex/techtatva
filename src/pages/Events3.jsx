@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import EventsCard from "./components/EventsCard";
 import Pagination from "./components/Pagination";
 
-const Events = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+const Events3 = () => {
+  const [currentPage, setCurrentPage] = useState(2);
   const onPageChange = (page) => setCurrentPage(page);
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (event) => {
@@ -17,51 +17,51 @@ const Events = () => {
 
   const events = [
     {
-      event: "PIXELVISION",
-      org: "MIT-GPT-WORKSHOP",
-      desc: "AB3 18 Oct 2023 Embark on a captivating voyage into the realm of computer vision with PixelVision, an OpenCV Workshop. Learn the technique of image processing through a series of hand-on activities and captivating demonstrations in an insightful session.",
+      event: "VEDANTH 13.0",
+      org: "VEDANTH-FLAGSHIP",
+      desc: "AB4 GROUND FLOOR COMMON AREA 18 Oct 2023 Vedanth is a technical exhibition at MIT's technical fest, Tech Tatva. It serves as a platform for innovators across esteemed institutions to showcase their skills in the fields of IoT, ML, medical innovation, robotics and automation, technology for social betterment, innovative learning, and frugal innovation.",
       mode: "OFFLINE",
     },
     {
-      event: "GITCRAFT",
-      org: "FOSSIFY-WORKSHOP",
-      desc: "AB3 104 16 Oct 2023 Building Together in Open Source: Want to learn Git, Github , and build your first open-source webpage? This workshop is for you!",
+      event: "ROBOWARS 30KG",
+      org: "ROBOWARS-FLAGSHIP",
+      desc: "Cage beside FC1 18 Oct 2023 A heavyweight battle between bots shall surely promise an adrenaline rush to our spectators and the best team will win the ultimate prize of a lac. Prize pool : Rs.120000",
       mode: "OFFLINE",
     },
     {
-      event: "ORK WORKSHOP & VIRTUAL ROCKET BUILDING COMPETION",
-      org: "ESCAPE VELOCITY-WORKSHOP",
-      desc: "Ab3-103 15 Oct 2023 The focus of the event is centered on utilizing the open-source software named open rocket, enabling participants to construct their model rockets from the ground up and subsequently simulate their behavior.",
+      event: "ROBOWARS – 15KG",
+      org: "ROBOWARS-FLAGSHIP",
+      desc: "Cage beside FC1 18 Oct 2023 The 15kg Battle Bot Category brings you the ultimate clash of engineering prowess and strategic brilliance. Prepare to witness an electrifying spectacle as powerful robots, weighing upto 15 kilograms, go head-to-head in a no-holds-barred combat extravaganza.",
       mode: "OFFLINE",
     },
     {
-      event: "MICROSOFT FLIGHT SIMULATOR",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-403 16 Oct 2023 Experience the beauty of aviation firsthand with our flight simulator and take to the skies. Calling all aviation enthusiasts.",
+      event: "OFFROAD MAYHEM",
+      org: "KRAFTWAGEN-FLAGSHIP",
+      desc: "Road in front of Block 13 19 Oct 2023 Join us for a thrilling journey of robotics as participants craft their ingenious robots from scratch. Witness the fusion of innovation and competition as these mechanical marvel sprint towards victory.",
       mode: "OFFLINE",
     },
     {
-      event: "FLIGHT MECHANICS WORKSHOP",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-102 17 Oct 2023 Have you ever wondered how planes actually fly? This workshop offers you the opportunity to dive deep into the wonderful world of air-flight machines. Covering the basics of flight mechanics and aerodynamics, this informative seminar allows you to visualize flight characteristics and essentially understand the science behind flight.",
+      event: "INTELLECTCONNECT: A RESEARCH PAPER PRESENTATION",
+      org: "INVESTIGAR-FLAGSHIP",
+      desc: "MV Seminar Hall 19 Oct 2023 This event aims to provide a platform to present a research paper on a topic of the individual’s interest in front of an esteemed panel of adjudicators. Participants need to submit their selected research paper.",
       mode: "OFFLINE",
     },
     {
-      event: "NOVA - UI/UX WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Whether you're a designer or a developer, this workshop will enhance your understanding of user needs and help you master the art of designing intuitive, user-friendly interfaces.",
+      event: "SKYRUSH",
+      org: "AEROVERSE- FLAGSHIP",
+      desc: "MIT Football Ground 19 Oct 2023 Get your teams ready to compete in a festival of flight. Skyrush gives you the opportunity to compete with your RC Aircrafts and Drones and win exciting rewards in this fast paced, problem-statement based competition.",
       mode: "OFFLINE",
     },
     {
-      event: "(M.A.D) MOBILE APP DEVELOPMENT WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Unlock the world of app development in our immersive workshop, designed for students eager to create, innovate and code. Join us to delve into the art of turning ideas into functional mobile applications. Guided by seasoned developers, you'll learn hands-on coding, UI design, and app deployment.",
+      event: "ECHO",
+      org: "SYNAPSE",
+      desc: "AB3 18 Oct 2023 Unleash your creative genius and dive into the realm of intelligent conversational agents. Join us in crafting captivating chatbots using cutting-edge technologies. But that’s not all – to ensure everyone is familiar with dialogue flow for creating remarkable chatbots, we’re thrilled to announce an accompanying workshop.",
       mode: "OFFLINE",
     },
     {
-      event: "EVERYTHING OFF-ROAD",
-      org: "KRAFTWAGEN (WORKSHOP)",
-      desc: "Behind MIT Football ground 15 Oct 2023 An interesting workshop demonstrating various domains involved in the manufacturing of automobiles and industry level skill sets. By using preliminary design(CAD) , analysis (CAE), manufacturing process and finally testing of components.",
+      event: "ICARUS",
+      org: "AEROVERSE",
+      desc: "Annapoorna Mess, Top Floor, Boxing Ring 21 Oct 2023 Conquer the skies by creating your own flying balsa gliders from the materials provided stand a chance to win amazing prizes.",
       mode: "OFFLINE",
     },
   ];
@@ -130,11 +130,11 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <div className="page-1 flex justify-center items-center p-8 ">
+      <div className="page-3 flex justify-center items-center p-8 ">
         <Pagination />
       </div>
     </div>
   );
 };
 
-export default Events;
+export default Events3;

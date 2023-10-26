@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import EventsCard from "./components/EventsCard";
 import Pagination from "./components/Pagination";
 
-const Events = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+const Events4 = () => {
+  const [currentPage, setCurrentPage] = useState(2);
   const onPageChange = (page) => setCurrentPage(page);
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (event) => {
@@ -17,52 +17,52 @@ const Events = () => {
 
   const events = [
     {
-      event: "PIXELVISION",
-      org: "MIT-GPT-WORKSHOP",
-      desc: "AB3 18 Oct 2023 Embark on a captivating voyage into the realm of computer vision with PixelVision, an OpenCV Workshop. Learn the technique of image processing through a series of hand-on activities and captivating demonstrations in an insightful session.",
+      event: "MEDTECH MAYHEM",
+      org: "EPSILON",
+      desc: "AB5 201 19 Oct 2023 Think you’re a Bio wiz? Come join us in MedTech Mayhem: The all-in-one event to test your mettle against the best. This team-based event requires both knowledge and debating skills, so choose your teammates wisely and sign up for the chance to prove yourself.",
       mode: "OFFLINE",
     },
     {
-      event: "GITCRAFT",
-      org: "FOSSIFY-WORKSHOP",
-      desc: "AB3 104 16 Oct 2023 Building Together in Open Source: Want to learn Git, Github , and build your first open-source webpage? This workshop is for you!",
+      event: "ESCAPE ROOM",
+      org: "COSMICON",
+      desc: "AB5 (201-205,401-405,504-508) 21 Oct 2023 This is an engaging and immersive escape room-based event where the participating teams are tasked with navigating a multi-floor building. The teams, armed with their wits and collaborative spirit, will find themselves confronted with an array of intricately designed scenarios on each floor.",
       mode: "OFFLINE",
     },
     {
-      event: "ORK WORKSHOP & VIRTUAL ROCKET BUILDING COMPETION",
-      org: "ESCAPE VELOCITY-WORKSHOP",
-      desc: "Ab3-103 15 Oct 2023 The focus of the event is centered on utilizing the open-source software named open rocket, enabling participants to construct their model rockets from the ground up and subsequently simulate their behavior.",
+      event: "ASTROPHOTOGRAPHY AND POSTER MAKING",
+      org: "COSMICON",
+      desc: "AB3 404,405 19 Oct 2023 An astrophotography and poster making competition where participants have to capture images of the night sky and using their samples make an innovative and informative poster.",
       mode: "OFFLINE",
     },
     {
-      event: "MICROSOFT FLIGHT SIMULATOR",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-403 16 Oct 2023 Experience the beauty of aviation firsthand with our flight simulator and take to the skies. Calling all aviation enthusiasts.",
+      event: "INNOFRAME",
+      org: "MECHANIZE",
+      desc: "Ab3 -302 19 Oct 2023 INNOFRAME is a thrilling competition that invites talented designers and engineers to revolutionize the world of roll cage and chassis design.",
       mode: "OFFLINE",
     },
     {
-      event: "FLIGHT MECHANICS WORKSHOP",
-      org: "AEROVERSE-WORKSHOP",
-      desc: "AB3-102 17 Oct 2023 Have you ever wondered how planes actually fly? This workshop offers you the opportunity to dive deep into the wonderful world of air-flight machines. Covering the basics of flight mechanics and aerodynamics, this informative seminar allows you to visualize flight characteristics and essentially understand the science behind flight.",
-      mode: "OFFLINE",
+      event: "OPEN-SOURCE CRYPTIC HUNT",
+      org: "FOSSIFY",
+      desc: "20 Oct 2023 Cryptic Hunt is envisioned as an open source treasure hunt game in which players must understand clues to proceed to higher level. Hints will be based on open-source projects, tools and programs utilized in the technological field.",
+      mode: "ONLINE",
     },
     {
-      event: "NOVA - UI/UX WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Whether you're a designer or a developer, this workshop will enhance your understanding of user needs and help you master the art of designing intuitive, user-friendly interfaces.",
-      mode: "OFFLINE",
+      event: "CODE FUSION",
+      org: "CODE RED",
+      desc: "19 Oct 2023 An online coding challenge structured in ICPC fashion but with a twist, where teams of three members collaborate to find innovative solutions to real-world problems. This competition promotes teamwork, creativity, innovation, and the ability to thrive in high-pressure situations.",
+      mode: "ONLINE",
     },
     {
-      event: "(M.A.D) MOBILE APP DEVELOPMENT WORKSHOP",
-      org: "CODE RED- WORKSHOP",
-      desc: "AB3 18 Oct 2023 Unlock the world of app development in our immersive workshop, designed for students eager to create, innovate and code. Join us to delve into the art of turning ideas into functional mobile applications. Guided by seasoned developers, you'll learn hands-on coding, UI design, and app deployment.",
-      mode: "OFFLINE",
+      event: "MONOPOLY",
+      org: "BIZZCOM",
+      desc: "19 Oct 2023 A trading-based competition where teams will represent companies and organizations with certain assets and set objectives. A problem statement shall be provided where the teams will have to create strategies and form alliances with other teams to achieve their goals.",
+      mode: "ONLINE",
     },
     {
-      event: "EVERYTHING OFF-ROAD",
-      org: "KRAFTWAGEN (WORKSHOP)",
-      desc: "Behind MIT Football ground 15 Oct 2023 An interesting workshop demonstrating various domains involved in the manufacturing of automobiles and industry level skill sets. By using preliminary design(CAD) , analysis (CAE), manufacturing process and finally testing of components.",
-      mode: "OFFLINE",
+      event: "CIPHER",
+      org: "MIT-GPT",
+      desc: "AB3 18 Oct 2023 Cipher is an intensive 24-hour Data Science Hackathon where participants will have to showcase their analytics and Machine Learning expertise. The individual will be given an opportunity to demonstrate their proficiency in data handling and exhibit their analytical skills in an intense and competitive environment.",
+      mode: "ONLINE",
     },
   ];
   return (
@@ -130,11 +130,11 @@ const Events = () => {
           </div>
         ))}
       </div>
-      <div className="page-1 flex justify-center items-center p-8 ">
+      <div className="page-4 flex justify-center items-center p-8 ">
         <Pagination />
       </div>
     </div>
   );
 };
 
-export default Events;
+export default Events4;
