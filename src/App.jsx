@@ -14,6 +14,9 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/forLoggedIn/Dashboard";
+import Schedules from "./pages/forLoggedIn/Schedules";
+import Profile from "./pages/forLoggedIn/Profile";
+
 const App = () => {
   const [isLogin, setLogin] = useState(false);
   return (
@@ -34,6 +37,8 @@ const App = () => {
         />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/events-schedules" element={<Schedules />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
