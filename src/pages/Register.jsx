@@ -3,29 +3,25 @@ import React from "react";
 const Register = () => {
   return (
     <div>
-      <section className="bg-gray-50">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <section className="bg-transparent">
+        <div className="flex flex-col items-center justify-start px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
-            className="flex items-center mb-6 text-2xl font-semibold text-gray-900"
+            className="flex items-center mb-6 cardo text-6xl font-semibold text-white"
           >
-            <img
-              className="w-8 h-8 mr-2"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg"
-              alt="logo"
-            />
-            Flowbite
+            <img className="w-32 h-32 mr-2" src="./tt-nobg.png" alt="logo" />
+            Register
           </a>
-          <div className="w-full bg-white rounded-lg shadow">
-            <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+          <div className="w-4/6 text-center bg-white rounded-lg shadow">
+            <div className="p-6 space-y-4 md:space-y-6 sm:p-4">
+              <h1 className="text-xl work text-center font-bold leading-tight tracking-tight text-gray-900 md:text-4xl">
                 Create an account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
+              <form className="space-y-4 monts md:space-y-6" action="#">
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm font-medium text-gray-900"
+                    className="block mb-2 text-sm font-semibold text-purple-600"
                   >
                     Your email
                   </label>
@@ -33,15 +29,15 @@ const Register = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                    placeholder="name@company.com"
+                    className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-1/2 mx-auto p-2.5"
+                    placeholder="shrudex@gmail.com"
                     required=""
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="password"
-                    className="block mb-2 text-sm font-medium text-gray-900"
+                    className="block mb-2 text-sm font-medium text-purple-600"
                   >
                     Password
                   </label>
@@ -50,14 +46,14 @@ const Register = () => {
                     name="password"
                     id="password"
                     placeholder="••••••••"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="w-1/2 mx-auto bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block p-2.5"
                     required=""
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="confirm-password"
-                    className="block mb-2 text-sm font-medium text-gray-900"
+                    className="block mb-2 text-sm font-medium text-purple-600"
                   >
                     Confirm password
                   </label>
@@ -66,43 +62,22 @@ const Register = () => {
                     name="confirm-password"
                     id="confirm-password"
                     placeholder="••••••••"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                    className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-1/2 mx-auto p-2.5"
                     required=""
                   />
                 </div>
-                <div className="flex items-start">
-                  <div className="flex items-center h-5">
-                    <input
-                      id="terms"
-                      aria-describedby="terms"
-                      type="checkbox"
-                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
-                      required=""
-                    />
-                  </div>
-                  <div className="ml-3 text-sm">
-                    <label htmlFor="terms" className="font-light text-gray-500">
-                      I accept the{" "}
-                      <a
-                        className="font-medium text-primary-600 hover:underline"
-                        href="#"
-                      >
-                        Terms and Conditions
-                      </a>
-                    </label>
-                  </div>
-                </div>
+
                 <button
                   type="submit"
-                  className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                  className="w-1/4 text-white bg-purple-600 hover:bg-purple-700  font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                 >
                   Create an account
                 </button>
                 <p className="text-sm font-light text-gray-500">
                   Already have an account?{" "}
                   <a
-                    href="#"
-                    className="font-medium text-primary-600 hover:underline"
+                    href="/login"
+                    className="font-medium text-black hover:underline"
                   >
                     Login here
                   </a>

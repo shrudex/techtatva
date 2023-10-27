@@ -5,22 +5,22 @@ const Contact = () => {
   const people = [
     {
       name: "Ashrut Arora",
-      reg: "210968172",
+      reg: "210968206",
       photo: "./images/people/ashrut.jpg",
       linkedin: "https://www.linkedin.com/in/ashrut-arora-418880227/",
       number: "wa.me/+919923238850",
     },
     {
       name: "Sathwika Ravikanti",
-      reg: "210968172",
+      reg: "210968152",
       photo: "https://i.pravatar.cc/150?u=5",
       linkedin: "https://www.linkedin.com/in/sathwika-ravikanti-3b768254/",
       number: "wa.me/+919324789579",
     },
     {
       name: "Ansh Kankani",
-      reg: "210968172",
-      photo: "https://i.pravatar.cc/150?u=49225222p4",
+      reg: "210968126",
+      photo: "./images/people/ansh.jpg",
       linkedin: "https://www.linkedin.com/in/ansh-kankani-b99ba1269/",
       number: "wa.me/+918778808771",
     },
@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="card2 w-[30%] flex items-center justify-center">
           <ContactCard
             name="Dev Thakkar"
-            reg="210968172"
+            reg="210968148"
             photo="./images/people/dev.jpg"
             linkedin="https://www.linkedin.com/in/dev-thakkar-0854891b0/"
             number="wa.me/+917304898486"
@@ -82,16 +82,16 @@ const Contact = () => {
         </div>
       </div>
       <div className="tech-cards flex justify-center items-center mt-12 gap-16 pb-12">
-      {people.map((indi, index) => (
-              <ContactCard
-                key={index}
-                name={indi.name}
-                reg={indi.reg}
-                photo={indi.photo}
-                linkedin={indi.linkedin}
-                number={indi.number}
-              />
-            ))}
+        {people.map((indi, index) => (
+          <ContactCard
+            key={index}
+            name={indi.name}
+            reg={indi.reg}
+            photo={indi.photo}
+            linkedin={indi.linkedin}
+            number={indi.number}
+          />
+        ))}
       </div>
     </div>
   );
