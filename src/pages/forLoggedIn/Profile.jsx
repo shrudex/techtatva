@@ -1,6 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Profile = () => {
+const Profile = ({ status, setStatus }) => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus(false);
+    console.log(status);
+    navigate("/");
+  };
+
   return (
     <div className="w-full h-screen flex flex-col items-center justify-start gap-12">
       <h1 className="cardo text-6xl text-center mb-2">My Profile</h1>
@@ -33,7 +42,12 @@ const Profile = () => {
               </div>
             </a>
           </div>
-          <button className="mt-4 raleway bg-white border border-black text-purple-600 font-semibold hover:bg-gray-100 rounded text-xl py-1 px-4">Log Out</button>
+          <button
+            onClick={handleSubmit}
+            className="mt-4 raleway bg-white border border-black text-purple-600 font-semibold hover:bg-gray-100 rounded text-xl py-1 px-4"
+          >
+            Log Out
+          </button>
         </div>
       </div>
     </div>

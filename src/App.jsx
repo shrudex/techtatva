@@ -38,7 +38,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/events-schedules" element={<Schedules />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile status={isLogin} setStatus={setLogin} />} />
       </Routes>
     </div>
   );
