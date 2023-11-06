@@ -1,5 +1,6 @@
 import User from "./models/user.js";
 import mongoose from "mongoose";
+import Event from "./models/event.js";
 
 await mongoose
   .connect(
@@ -8,9 +9,19 @@ await mongoose
   .then(() => console.log("DB Connected!"))
   .catch((err) => console.log(`DB Connection Error: ${err.message}`));
 
+const ids = [];
+const events = await Event.find({});
+for (let event of events) {
+  ids.push(event._id);
+}
 const seedDB = async () => {
-  await User.deleteMany({});
-  console.log("Deleted all users...");
+  // await User.deleteMany({});
+  // console.log("Deleted all users...");
+  const eventstaken = [];
+  const randomNumber = Math.floor(Math.random() * 4);
+  for (let i = 0; i < randomNumber; i++) {
+    eventstaken.push(ids[Math.floor(Math.random() * 10)]);
+  }
   for (let i = 0; i < 10; i++) {
     const user = new User({
       name: `User${i}`,
@@ -18,6 +29,7 @@ const seedDB = async () => {
       email: `user${i}@example.com`,
       regno: Math.floor(Math.random() * 1000),
       college: "Manipal Institute of Technology",
+      events: eventstaken,
     });
     await user.save();
   }
@@ -25,3 +37,5 @@ const seedDB = async () => {
 };
 
 seedDB();
+
+

@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
   events:{
+    //array of object ids
     type: Array,
-    ref: "Event",
   },
   college: String,
 });

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./LNavbar.css";
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "flowbite-react";
-import { SignOutButton } from "@clerk/clerk-react";
+import { SignOutButton, UserButton } from "@clerk/clerk-react";
 
 const LNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,9 +33,9 @@ const LNavbar = () => {
         <li>
           <NavLink to="/profile">Profile</NavLink>
         </li>
-        <SignOutButton className="mr-4 bg-blue-800 rounded-xl px-3 py-2">
-          Logout
-        </SignOutButton>
+        <li className="mr-4">
+          <UserButton></UserButton>
+        </li>
       </ul>
     </nav>
   );
