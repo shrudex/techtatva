@@ -1,13 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/tt-nobg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Tatva</title>
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #6421f3c7;
+        --df-messenger-button-titlebar-color: #7f45fc;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #878fac;
+        --df-messenger-user-message: #0f9bc9;
+      }
+    </style>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="TechTatva-Bot"
+      agent-id="090861b8-b9f7-4cff-8130-92156aa8e0b6"
+      language-code="en"
+      chat-icon="./TT-icon.png"
+    ></df-messenger>
   </body>
 </html>
