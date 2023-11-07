@@ -19,7 +19,7 @@ const EventsCardL = ({ event, org, desc, done }) => {
       </div>
 
       <button
-        className={`items-center w-2/6 mx-auto px-3 py-1 rounded-lg raleway text-sm font-medium text-white text-center  focus:ring-4 focus:outline-none cursor-default ${
+        className={`items-center cursor-pointer w-2/6 mx-auto px-3 py-1 rounded-lg raleway text-sm font-medium text-white text-center  focus:ring-4 focus:outline-none ${
           done === true
             ? "bg-[#915EFF]  hover:bg-purple-600"
             : "bg-[#3762ff] hover:bg-blue-700"
@@ -32,3 +32,4 @@ const EventsCardL = ({ event, org, desc, done }) => {
 };
 
 export default EventsCardL;
+
