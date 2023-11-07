@@ -277,10 +277,37 @@ const Dashboard = () => {
 
   if (!isLoaded) return null;
 
+  if (!Array.isArray(eventsList) || eventsList.length < 4) {
+    return null;
+  }
 
+  function getRandomEvents(arr, num) {
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+
+  const randomEvents = getRandomEvents(eventsList, 4);
   return (
     <div className="w-full h-screen flex flex-col items-center justify-start gap-12">
       <h1 className="cardo text-6xl text-center mb-2">Dashboard</h1>
+      <div className="events-header flex w-[96%] px-4 my-4 mx-auto items-center justify-between rounded-xl bg-[#915EFF]">
+        <h3 className="raleway text-2xl">
+          TechTatva 2023 : <span className="font-semibold ">Events Registered</span>
+        </h3>
+      </div>
+      <div className="events-grid px-8 py-2 grid grid-cols-4 gap-5 mb-16">
+        {randomEvents.map((event, index) => (
+          <div key={index} className="flex flex-col">
+            <EventsCard
+              event={event.event}
+              org={event.org}
+              desc={event.desc}
+              mode={event.mode}
+              done={event.done}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

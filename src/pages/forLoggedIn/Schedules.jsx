@@ -243,6 +243,8 @@ const Schedules = () => {
   const delegate = id.slice(5);
 
   
+
+  
   return (
     <div className="w-full h-full flex flex-col items-center justify-start gap-12">
       <h1 className="cardo text-6xl text-center mb-2">Events & Schedules</h1>
