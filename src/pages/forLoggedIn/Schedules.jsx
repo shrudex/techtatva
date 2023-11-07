@@ -237,41 +237,42 @@ const Schedules = () => {
   //var phone = "123";
   console.log(phone);
   phone = phone?.slice(3, 13);
+  console.log(user);
 
-   useEffect(() => {
-     console.log("In first use effect");
-     axios
-       .get(`http://localhost:3000/showusers/${phone}`)
-       .then((res) => {
-         setLogger(res.data);
-         console.log(res.data);
+  useEffect(() => {
+    console.log("In first use effect");
+    axios
+      .get(`http://localhost:3000/showusers/${phone}`)
+      .then((res) => {
+        setLogger(res.data);
+        console.log(res.data);
 
-         if (res.data && res.data[0].events.length > 0) {
-           const fetchEvents = async () => {
-             const eventPromises = res.data[0].events.map((eventId) =>
-               axios.get(`http://localhost:3000/showevent/${eventId}`)
-             );
+        if (res.data && res.data[0].events.length > 0) {
+          const fetchEvents = async () => {
+            const eventPromises = res.data[0].events.map((eventId) =>
+              axios.get(`http://localhost:3000/showevent/${eventId}`)
+            );
 
-             try {
-               const eventResponses = await Promise.all(eventPromises);
-               const eventData = eventResponses.map((res) => res.data);
-               setEvents(eventData);
-               console.log("Events fetched:", eventData);
-             } catch (error) {
-               console.error(error);
-             }
-           };
+            try {
+              const eventResponses = await Promise.all(eventPromises);
+              const eventData = eventResponses.map((res) => res.data);
+              setEvents(eventData);
+              console.log("Events fetched:", eventData);
+            } catch (error) {
+              console.error(error);
+            }
+          };
 
-           fetchEvents();
-         }
-       })
-       .catch((err) => {
-         console.log(err);
-       });
-   }, [phone]);
+          fetchEvents();
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [phone]);
 
-   if (!isLoaded) return null;
-  
+  if (!isLoaded) return null;
+
   return (
     <div className="w-full h-full flex flex-col items-center justify-start gap-12">
       <h1 className="cardo text-6xl text-center mb-2">Events & Schedules</h1>
