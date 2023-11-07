@@ -234,16 +234,20 @@ const Schedules = () => {
   const [logger, setLogger] = useState(null);
   const [events, setEvents] = useState([]);
   var phone = user?.phoneNumbers?.[0]?.phoneNumber;
-  //var phone = "123";
-  console.log(phone);
   phone = phone?.slice(3, 13);
-  console.log(user);
+
+  const username = user.username;
+  const email = user.emailAddresses[0].emailAddress;
+  const img = user.imageUrl;
+  const id = user.id;
+  const delegate = id.slice(5);
 
   useEffect(() => {
     console.log("In first use effect");
     axios
-      .get(`http://localhost:3000/showusers/${phone}`)
+      .get(`http://localhost:3000/showusers/${email}`)
       .then((res) => {
+        console.log(res);
         setLogger(res.data);
         console.log(res.data);
 

@@ -42,6 +42,18 @@ app.get("/showusers/:phone", async (req, res) => {
   else res.json(users);
 });
 
+app.get("/showusers/:email", async (req, res) => {
+  const email = req.params.email;
+  const users = await User.find({ email: email });
+  console.log(email);
+  if (!users || users.length === 0) {
+    console.log("No users found");
+    res.status(404).json({ error: "No users found" });
+  } else {
+    res.json(users);
+  }
+});
+
 app.get("/showevent/:id", async (req, res) => {
   const id = req.params.id;
   const event = await Event.find({ _id: id });
