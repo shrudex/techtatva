@@ -1,6 +1,12 @@
 import React from "react";
 
 const EventsCardL = ({ event, org, desc, done }) => {
+  console.log(done);
+  const handleClick = (e) => {
+    e.preventDefault();
+    done = true;
+  };
+  console.log(done);
   return (
     <div className="m-w-sm p-3 h-[27rem] bg-white border border-gray-200 rounded-lg shadow flex flex-col transform duration-300 ease-out box2 transition-transform  hover:scale-[1.02]">
       <div className="flex h-24 justify-center items-center">
@@ -24,12 +30,18 @@ const EventsCardL = ({ event, org, desc, done }) => {
             ? "bg-[#915EFF]  hover:bg-purple-600"
             : "bg-[#3762ff] hover:bg-blue-700"
         }`}
+        onClick={handleClick}
       >
-        {done===true? "REGISTERED" : "REGISTER"}
+        {done === true ? (
+          "REGISTERED"
+        ) : (
+          <a href="https://checkout.stripe.com/c/pay/cs_test_a13JEK8kv0R3pwOmpRIbR8pAXiYyzEIMEKeJj5MHTggiGe53RZCSCIWBdK#fidkdWxOYHwnPyd1blpxYHZxWjA0SjxxSEdWRGZWd0ZvdENTbDRjNXBJfVRtYUZwXTRVdW1KbH1NNlxrcV1XYjBccVxBV1c8YExMQUc9SWBia2NJf3Z8Y0xNU0piRGxdRGZJVTx3f0NOQFw1NTVQV0RqY3RyQCcpJ2hsYXYnP34nYnBsYSc%2FJ0tEJyknaHBsYSc%2FJzY0NGdjYzEzKDdmZDEoMTE3MSg8Yzw3KGQ0YWA3MDFgN2EyYTc3PTJmZycpJ3ZsYSc%2FJz1jYTRhNTcxKDJjMTIoMWBjNChkNjBnKDRmYGE2ZzQ2PD08MDcwYWQyPSd4KSdnYHFkdic%2FXlgpJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ3dgY2B3d2B3SndsYmxrJz8nbXFxdT8qKmlqZmRpbWp2cT82NTU1J3gl">
+            REGISTER
+          </a>
+        )}
       </button>
     </div>
   );
 };
 
 export default EventsCardL;
-
